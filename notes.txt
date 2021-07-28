@@ -1,3 +1,32 @@
+- weekly refresh
+-----------------
+cd ~/src/plutus-pioneer-program
+git branch
+git pull
+(and cd to folder of the week)
+cd code/week04
+less cabal.project 
+(and copy tag of plutus.git)
+---------------
+cd ~/src/plutus
+git checkout master
+git pull
+(checkout tag from above)
+git checkout <tag>
+- for cabal repl
+----------------
+nix-shell
+cd ..
+cd plutus-pioneer-program/
+cabal repl
+----------------
+nix-shell
+cd plutus-playground-client
+plutus-playground-server
+ 
+
+
+
 https://alpha.marlowe.iohkdev.io/doc/haddock/plutus-ledger-api/html/Plutus-V1-Ledger-Contexts.html#t:TxOutRef
 https://docs.plutus-community.com/docs/setup/buildDocumentation.html
 BTW: To follow along with the documentation pages in the video I've built haddock like this:
